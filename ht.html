@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<button onmouseover="calll()">Click me</button>
+<p id="p1">oiugfdxsdcfghjk</p>
+
+
+<h1 class="header">Header 1</h1>
+<h2 class="header">Header 2</h2>
+<h3 class="header">Header 3</h3>
+
+
+<script type="text/javascript">
+	function calll(){
+		var a = document.getElementById('p1');
+		alert(a.innerHTML);
+		a.style.display="none";
+
+		var b = document.getElementsByClassName('header');
+		for(var i=0;i<b.length;i++){
+			b[i].style.color="green"
+		}
+		// alert(b[0]);
+
+	}
+</script>
+</body>
+</html>

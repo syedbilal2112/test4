@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Description</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="desc.css">
+
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+		$(document).ready(function(){
+		$("#d4").hide();
+		$("#d5").hide();
+		$("#b1").click(function(){
+			$("#d4").toggle();
+			$("#d5").hide();
+		});
+		$("#b2").click(function(){
+			$("#d5").toggle();
+			$("#d4").hide();
+		});
+		});
+	
+		function imgchange(obj){
+			
+				document.getElementById('img1').src=obj.src;
+		}
+</script>
+
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container"  style="padding: 5px 15px 5px 15px; margin-bottom: 0px;">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="margin-right: 60px; font-size: 40px; font-family: 'Permanent Marker', cursive;">E KART</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding: 5px 15px 5px 15px" >
+      <ul class="nav navbar-nav" >
+        <li class="active"><a href="#">HOME<span class="sr-only">(current)</span></a></li>
+        <li><a href="#p2">BRANDS</a></li>
+     
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+       
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#p3">Clothing</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Accesories</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">More</a></li>
+          </ul>
+        </li>
+         <li><a href="#">LOGIN</a></li>
+         <li><img src="https://image.freepik.com/free-icon/facebook-logo_318-49940.jpg" height="25px" width="25px" style="margin:10px; border-radius:50%"> </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="main">
+
+<div class="row">
+	<div class="col-md-6" id=image>
+		<img id="img1" src="product/f12.jpeg" alt="footwear"> <br> <hr>
+		<img src="product/f12.jpeg" id="i1" onclick="imgchange(this)"> <img src="product/f11.jpeg" id="i2" onclick="imgchange(this)"> 
+		<img src="product/f13.jpeg" id="i3" onclick="imgchange(this)">
+	</div>
+
+	<div class="col-md-6" id="d2">
+		<h2 > Product Name </h2> <br>
+		<span class="cost"> 2000 </span> <span style="white-space:pre;">  </span> <strike> 2500 </strike> <br> <br><br>
+
+		Enter your pincode to check if it is available in your area:
+
+		<form> <input type="text" name=""> <input type="submit" name="Check" value="check"> <br>
+
+			<input type="submit" name="" value="ADD TO CART" id="add">
+		</form>
+	</div>
+</div>
+
+<div id ="d3" style="margin-top: 80px; ">
+	<button id="b1" >Description</button>
+	<button id="b2">Reviews</button>
+	<div id="d4">
+		<h2> Product </h2>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p> 
+</div>
+
+	<div id="d5">
+		<h3>User1</h3>
+		<p>
+		Very good,durable,high-quality product.<br><br><hr>
+		<form>
+			<input type="text" name="" placeholder="name"><br><br>
+			<textarea rows="5" cols="30" placeholder="Your review of the product"></textarea>
+
+			<input style="width:90px;"  type="submit" name="" value="submit">
+		</form>
+	</p>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
+
+
+
+

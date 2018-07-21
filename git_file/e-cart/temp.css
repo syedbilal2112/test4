@@ -1,0 +1,117 @@
+#myCarousel
+{
+	margin: -20px 0px 0px 0px;
+	border: 2px solid black;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	position: relative;
+	}
+
+/*#myCarousel img*/
+/*{*/
+	/*position: relative;*/
+/*}*/
+
+.b1{
+	position: absolute;
+	top:450px;
+	left: 1000px;
+}
+#button1{
+	background-color: black;
+	top:450px;
+	left: 100px;
+	padding: 20px 50px 20px 50px;
+	font-family: cursive;
+	font-size: 30px;
+}
+.row img{
+	border: 1px solid grey;
+	margin: 20px;
+	width: 300px;
+	height: 300px;
+}
+
+.row img:hover{
+	transition: 0.3s;
+	transform:scale(1.2);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+#p2 h2{
+	font-family: 'Permanent Marker';
+	font-size:150px;
+}
+
+#p2{
+	margin: 150px 0px 150px 0px;
+}
+
+.parallax {
+    /* The image used */
+ background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0 , 0, 0, 0.45), 
+      rgba(0 , 0, 0, 0.45)
+    ),
+    /* bottom, image */
+    url('back1.jpg');
+    /* Set a specific height */
+    height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#p3 img{
+	border:1px solid black;
+	margin: 50px 80px 50px 80px;
+	border-radius: 50%;
+	height:250px;
+	width:250px;
+
+	
+}
+
+#p4{
+
+margin: 100px;
+
+}
+
+#fill input[type=submit]
+{
+	background-color: orange;
+	padding:10px;
+	width:40%;
+	font-size: 200%;
+	height: 100%;
+
+}
+
+#fill input[type=submit]:hover{
+	background-color: blue;
+	color:white;
+}
+
+footer
+{
+	background-color: black;
+	color:grey;
+	font-family: monospace;
+	font-size:20px;
+	padding: 30px;
+
+}
+
+footer ul li {
+	list-style-type: none;
+}
+
+
+footer a {
+color:grey;
+text-decoration: none;
+}

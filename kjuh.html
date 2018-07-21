@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<button onclick="getnames()">Click me</button>
+
+<div id="place"></div>
+
+<script type="text/javascript">
+	function getnames(){
+            alert('javascript called');
+             if (window.XMLHttpRequest) {
+             	alert('windows documentelement is called');
+                    // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp=new XMLHttpRequest();
+                  } else { // code for IE6, IE5
+                    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                  }  
+                  xmlhttp.onreadystatechange=function() {
+                  	alert('ajax is called')
+                    if (this.readyState==4) {
+                    	alert('success',this.responseText)
+                      document.getElementById("place").innerHTML=this.responseText;
+                      
+                    }
+                  }
+                  xmlhttp.open("GET","verifyname.html",true);
+                  xmlhttp.send();
+         }
+</script>
+</body>
+</html>

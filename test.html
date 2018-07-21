@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+       <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</head>
+<body>
+
+<button onclick="getnames()">Click me</button>
+
+<div id="call"></div>
+
+<script type="text/javascript">
+	// function getnames(){
+ //    alert('javascript called');
+ //          if (window.XMLHttpRequest) {
+ //              alert('windows documentelement is called');
+ //                    // code for IE7+, Firefox, Chrome, Opera, Safari
+ //                    xmlhttp=new XMLHttpRequest();
+ //                  } else { // code for IE6, IE5
+ //                    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+ //                  }  
+                  
+ //                  xmlhttp.onreadystatechange=function() {
+ //                    alert('ajax is called')
+ //                    if (this.readyState==4) {
+ //                      alert('success',this.responseText);
+ //                      document.getElementById("call").innerHTML=this.responseText;
+                      
+ //                    }
+ //                    else{
+                      
+ //                    }
+ //                  }
+ //                  xmlhttp.open("GET","varifyname.html",true);
+ //                  xmlhttp.send();
+ //         }
+
+</script>
+
+<script>
+  $(function(){
+    $('button').click(function(){
+       $.ajax({
+        url: "varifyname.html",
+        type: "get",
+        data: {
+
+        },
+        success: function (response) {
+          alert(response)
+          console.log(response)
+          document.getElementById("call").innerHTML=JSON.parse(response);
+
+          },
+          error: function(response){
+            alert('not right')
+          }
+    })
+    })
+     
+    // alert('hi');
+})
+</script>
+</body>
+</html>
